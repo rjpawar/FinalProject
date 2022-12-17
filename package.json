@@ -1,0 +1,42 @@
+{
+  "name": "tripplanner-server",
+  "version": "1.0.0",
+  "description": "A Trip Planner Web Application for CS5610 final project.",
+  "main": "index.js",
+  "scripts": {
+    "server": "node index.js",
+    "client": "cd frontend && npm start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "startDev": "concurrently --kill-others-on-fail \"npm run-script server\" \"npm run-script client\"",
+    "start": "npm run-script server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lulu814/TripPlanner.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lulu814/TripPlanner/issues"
+  },
+  "dependencies": {
+    "@googlemaps/google-maps-services-js": "^3.1.13",
+    "axios": "^0.21.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.16",
+    "react-router": "^6.4.5"
+  },
+  "devDependencies": {
+    "concurrently": "^4.0.1",
+    "nodemon": "^2.0.6"
+  },
+  "homepage": "https://github.com/lulu814/TripPlanner#readme",
+  "engines": {
+    "node": "12.18.3"
+  }
+}
